@@ -9,13 +9,13 @@ from .import_utils import is_diffusers_available, is_peft_available, is_wandb_av
 from .models import (
     AutoModelForCausalLMWithValueHead,
     AutoModelForSeq2SeqLMWithValueHead,
+    AutoModelForMaskedLMWithValueHead,
     PreTrainedModelWrapper,
     create_reference_model,
 )
 from .trainer import (
     DataCollatorForCompletionOnlyLM,
     DPOTrainer,
-    IterativeSFTTrainer,
     PPOConfig,
     PPOTrainer,
     RewardConfig,
